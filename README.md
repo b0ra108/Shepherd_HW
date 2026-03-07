@@ -1,4 +1,4 @@
-# Shepherd
+# Shepherd HW
 # ESP32 GPS + Accelerometer Data Logger / Uploader
 
 A data acquisition system using an ESP32 that records accelerometer data from an MPU6050 and GPS position data, stores it locally using SPIFFS, and uploads it to a remote server.
