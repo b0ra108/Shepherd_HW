@@ -315,8 +315,9 @@ void loop() {
   uint16_t fifoCount = mpu.getFIFOCount();
 
   //default timestamp value for gps module is around 1999
-  //(1970/1/1 00:00 UTC + 944638632 seconds),then gps module 
-  // is not fixed and does return defaults if this value is taken
+  //(1970/1/1 00:00 UTC + 944638632 seconds), this with other
+  //default valus for longtitude langtitude and altitude are returned
+  //when gps can't get a fix (can't get signal from satellites)
   while (GPSSerial.available()) {
     gps.encode(GPSSerial.read());
   }
